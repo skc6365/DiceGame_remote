@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DiceGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DICE GAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsX-PB-vJk">
+                                <rect key="frame" x="130.33333333333331" y="127.00000000000001" width="129.33333333333331" height="28.666666666666671"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2G-W7-PG4">
+                                <rect key="frame" x="135" y="690" width="120" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="1ta-z9-i30"/>
+                                    <constraint firstAttribute="height" constant="40" id="Gjv-Rd-tr6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="ROLL">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="rollButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sPp-1X-guQ"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cJT-Y4-URm">
+                                <rect key="frame" x="20" y="338.33333333333331" width="350" height="167.33333333333331"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KakaoTalk_Photo_2023-02-20-17-14-11 1" translatesAutoresizingMaskIntoConstraints="NO" id="wK6-FX-f29">
+                                        <rect key="frame" x="0.0" y="0.0" width="167.66666666666666" height="167.33333333333334"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="wK6-FX-f29" secondAttribute="height" multiplier="1:1" id="4IK-9g-mgc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KakaoTalk_Photo_2023-02-20-17-14-11 1" translatesAutoresizingMaskIntoConstraints="NO" id="ka0-Pa-gBd">
+                                        <rect key="frame" x="182.66666666666663" y="0.0" width="167.33333333333337" height="167.33333333333334"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ka0-Pa-gBd" secondAttribute="height" multiplier="1:1" id="TWP-A5-ant"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tsX-PB-vJk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="7gL-84-Jnx"/>
+                            <constraint firstItem="tsX-PB-vJk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RJX-nM-0v2"/>
+                            <constraint firstItem="cJT-Y4-URm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W4E-jM-iLO"/>
+                            <constraint firstItem="cJT-Y4-URm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eB5-U6-dNo"/>
+                            <constraint firstItem="y2G-W7-PG4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jJr-Bo-ELH"/>
+                            <constraint firstItem="cJT-Y4-URm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lWz-EM-YYX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cJT-Y4-URm" secondAttribute="trailing" constant="20" id="mXH-WG-jf6"/>
+                            <constraint firstItem="tsX-PB-vJk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rk5-ba-asB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y2G-W7-PG4" secondAttribute="bottom" constant="80" id="wNb-KA-fC0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstImageView" destination="wK6-FX-f29" id="flf-Sw-zbQ"/>
+                        <outlet property="secondImageView" destination="ka0-Pa-gBd" id="FED-42-esu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-360" y="-12"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="KakaoTalk_Photo_2023-02-20-17-14-11 1" width="73" height="71.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
